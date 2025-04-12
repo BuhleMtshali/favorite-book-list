@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+   --light-bg: #F3F3FF;
+   --dark-lavender: #6A2CD3;
+   --light-lavender: #A36BFF;
+   --faded-lavender: #D9D3FF;
+   --text-color: #1A202C;
+}
+
+body{
+    font-family: "Inter Tight", sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+}
