@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
 
 :root{
    --light-bg: #F3F3FF;
@@ -28,6 +29,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 100;
+    background-color: var(--faded-lavender);
 }
 
 nav{
@@ -35,6 +37,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    color: var(--text-color);
 }
 
 nav .left-logo{
@@ -42,6 +45,12 @@ nav .left-logo{
     height: 80px;
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+nav .left-logo h2{
+    font-size: 2.5rem;
+    font-family: "Poetsen One", sans-serif;
 }
 
 nav .left-logo img{
@@ -51,8 +60,237 @@ nav .left-logo img{
     object-position: center;
 }
 
+nav .mid-logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .mid-logo p{
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .mid-logo p:hover{
+ font-weight: 700;
+ font-size: 1.4rem;
+ color: var(--dark-lavender);
+}
+
+nav .right-logo button{
+    padding: 13px 30px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-family: "Poetsen One", sans-serif;
+    border-radius: 40px;
+    background-color: var(--text-color);
+    color: var(--light-bg);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .right-logo button i{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav .right-logo button:hover{
+    background-color: var(--faded-lavender);
+    color: var(--text-color);
+    border: 3px solid var(--text-color);
+}
+
+nav .menu{
+    display: none;
+}
+
+nav .menu i{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
 main{
     margin-top: 120px;
      width: 100%;
      height: 100vh;
  }
+
+
+ .hide{
+    display: none;
+ }
+
+/* RESPONSIVENESS */
+/* 2xl */
+@media (max-width: 1536px) {
+   
+}
+
+/* xl */
+@media (max-width: 1280px) {
+ 
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    /* nav */
+    header{
+        height: auto;
+    }
+
+    nav{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav .menu{
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 45px;
+    left: 920px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+nav .mid-logo{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav .mid-logo.hidden{
+    display: none;
+    
+}
+/* nav */
+  
+ 
+}
+
+/* md */
+@media (max-width: 768px) {
+    /* nav */
+    header{
+        height: auto;
+    }
+
+    nav{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    nav .menu{
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 45px;
+    left: 690px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+nav .mid-logo{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav .mid-logo.hidden{
+    display: none;
+    
+}
+/* nav */
+  
+}
+
+/* sm */
+@media (max-width: 640px) {
+    /* nav */
+    header{
+        height: auto;
+    }
+
+nav{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav .menu{
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 45px;
+    left: 560px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+nav .mid-logo{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav .mid-logo.hidden{
+    display: none;
+    
+}
+/* nav */
+
+      
+}
+
+/* xs */
+@media (max-width: 475px) {
+    /* nav */
+    header{
+            height: auto;
+        }
+
+    nav{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav .menu{
+        display: block;
+        margin-left: auto;
+        position: absolute;
+        top: 45px;
+        left: 360px;
+    }
+
+
+    .hidden{
+        display: none;
+    }
+
+    nav .mid-logo{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .mid-logo.hidden{
+        display: none;
+        
+    }
+/* nav */
+ 
+}
