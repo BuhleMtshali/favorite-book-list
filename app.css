@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Special+Gothic+Condensed+One&display=swap');
 
+*{
+    user-select: none;
+}
+
 :root{
    --light-bg: #F3F3FF;
    --dark-lavender: #6A2CD3;
@@ -18,12 +22,14 @@ body{
 }
 
 .container{
-    max-width: 1536px;
-    width: 100%;
+ max-width: 1536px;
+ width: 100%;
+ margin: auto;
 }
 
 header{
     height: 120px;
+    max-width: 1536px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -115,9 +121,9 @@ nav .menu i{
 }
 
 main{
-    margin-top: 120px;
      width: 100%;
      height: 100vh;
+     margin:120px auto;
  }
 
 main .top-main {
@@ -132,6 +138,7 @@ main .top-main h1{
     font-size: 3rem;
     font-family: "Special Gothic Condensed One", sans-serif;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 main .top-main h1 span{
@@ -157,9 +164,6 @@ main .top-main p{
     height: 80%;
     background-color: var(--faded-lavender);
     z-index: 1000;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
    padding: 20px;
    border-radius: 40px;
    border: 3px solid var(--dark-lavender);
@@ -275,6 +279,22 @@ input:focus{
 
 /* modal styles */
 
+.book-wrapper{
+    max-width: 1536px;
+    margin: 20px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 15px;
+}
+
+.book-wrapper .book{
+    height: 450px;
+    width: 100%;
+    border: 2px solid var(--dark-lavender);
+    border-radius: 30px;
+    cursor: pointer;
+}
 /* RESPONSIVENESS */
 /* 2xl */
 @media (max-width: 1536px) {
