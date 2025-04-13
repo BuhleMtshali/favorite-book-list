@@ -22,14 +22,36 @@
                 <p>Contact Us</p>
                 </div>
                 <div class="right-logo hidden">
-                <button><i class="fa-solid fa-plus"></i> Add Book</button>
+                <button class="show-modal"><i class="fa-solid fa-plus"></i> Add Book</button>
                 </div>
                 <div class="menu">
                 <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <div class="top-main">
+                <h1>YOUR LIBRARY <span>IN YOUR POCKET.</span></h1>
+                <p>Your Library in Your Pocket available at anytime.</p>
+            </div>
+        </main>
+        <!-- modal window -->
+         <div class="modal hide-modal">
+            <button class="close-modal"><i class="fa-solid fa-x"></i></button>
+            <h2>Add Book to Library</h2>
+            <form id="form">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+                <label for="cover">Book Cover</label>
+                <input type="url" name="cover" id="cover">
+                <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read-toggle">
+            </form>
+         </div>
+         <!-- modal window -->
+          <div class="overlay hide-modal"></div>
     </div>
     <script src="app.js"></script>
 </body>

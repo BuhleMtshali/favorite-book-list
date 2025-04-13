@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Special+Gothic+Condensed+One&display=swap');
 
 :root{
    --light-bg: #F3F3FF;
@@ -121,10 +120,59 @@ main{
      height: 100vh;
  }
 
+main .top-main {
+    padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
- .hide{
+main .top-main h1{
+    color: var(--dark-lavender);
+    font-size: 3rem;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    letter-spacing: 1px;
+}
+
+main .top-main h1 span{
+    color: var(--light-lavender);
+}
+
+main .top-main p{
+    color: var(--faded-lavender);
+    font-weight: 600;
+}
+
+/* modal styles */
+label{
+    display: block;
+}
+
+.hide-modal{
     display: none;
- }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: chocolate;
+    z-index: 1000;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+}
+
+/* modal styles */
 
 /* RESPONSIVENESS */
 /* 2xl */
