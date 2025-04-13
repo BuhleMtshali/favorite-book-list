@@ -23,5 +23,5 @@ openModal.addEventListener('click', () => {
 //closing the modal
 closeModalBtn.addEventListener('click', () => {
     modal.classList.add('hide-modal');
-    overlay.classList.add('hide-modal')
+    overlay.classList.add('hide-modal');
 })

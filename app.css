@@ -144,10 +144,6 @@ main .top-main p{
 }
 
 /* modal styles */
-label{
-    display: block;
-}
-
 .hide-modal{
     display: none;
 }
@@ -158,10 +154,106 @@ label{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    background-color: chocolate;
+    height: 80%;
+    background-color: var(--faded-lavender);
     z-index: 1000;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+   padding: 20px;
+   border-radius: 40px;
+   border: 3px solid var(--dark-lavender);
 }
 
+.inner-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close-modal{
+    position: relative;
+    margin-left: auto;
+    padding: 12px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--dark-lavender);
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--dark-lavender);
+    transition: all 0.3s ease-in-out;
+}
+
+.close-modal:hover{
+    background-color: var(--dark-lavender);
+    border: 3px solid var(--light-bg);
+    color: var(--light-bg);
+}
+
+.modal h2{
+    font-size: 3.3rem;
+    color: var(--text-color);
+    font-family: "Poetsen One", sans-serif;
+}
+
+.modal-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-heading img{
+ width: 80px;
+ height: 80px;
+ object-fit: cover;
+ object-position:center ;
+}
+
+form{
+    margin-top: 20px;
+    width: 80%;
+}
+
+label{
+    display: block;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 32px;
+    font-size: 1.3rem;
+    border: 3px solid var(--dark-lavender);
+    background-color: var(--light-bg);
+}
+
+input:focus{
+    outline: none;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.submit-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-div button{
+    padding: 12px 28px;
+    border-radius: 28px;
+    font-size: 1.2rem;
+    font-family: "Poetsen One", sans-serif;
+    cursor: pointer;
+    background-color: var(--dark-lavender);
+    border: none;
+    color: var(--light-bg);
+}
 .overlay{
     position: absolute;
     top: 0;

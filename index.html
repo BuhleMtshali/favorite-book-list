@@ -37,18 +37,28 @@
         </main>
         <!-- modal window -->
          <div class="modal hide-modal">
-            <button class="close-modal"><i class="fa-solid fa-x"></i></button>
-            <h2>Add Book to Library</h2>
-            <form id="form">
+                <div class="inner-modal">
+                <button class="close-modal"><i class="fa-solid fa-x"></i></button>
+                <div class="modal-heading">
+                <h2>Add Book to Library</h2>
+                <img src="assets/logo-3.png" alt="">
+                </div>
+                <form id="form">
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title">
                 <label for="author">Author</label>
                 <input type="text" name="author" id="author">
                 <label for="cover">Book Cover</label>
                 <input type="url" name="cover" id="cover">
-                <label for="read">Read</label>
+                <div class="checkbox">
+                <label for="read-toggle">Read</label>
                 <input type="checkbox" name="read" id="read-toggle">
-            </form>
+                </div>
+                <div class="submit-div">
+                <button type="submit" id="submit-form">Add Book</button>
+                </div>
+                </form>
+                </div>
          </div>
          <!-- modal window -->
           <div class="overlay hide-modal"></div>
